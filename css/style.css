@@ -1,0 +1,110 @@
+/* h1, h2, footer {
+    text-align: center;
+} */
+
+*
+{
+    margin : 0;
+    padding : 0;
+}
+
+header {
+    height: 60px;
+    background: royalblue;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+    color:#424242;
+}
+
+h2 {
+    font-size: 1.6em;
+    color:#555555;
+}
+
+header h1 {
+    float: left;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* img {
+    width: 10%;
+    height: 10%;
+} */
+
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+footer {
+    font-weight: bold;
+    font-style: italic;
+    border: 1px rgb(120, 120, 120) solid ;
+    /* Border radius only works with border */
+    border-radius: 10px;
+    /* Shadow effect on text and outline */
+    box-shadow: 5px 5px 3px rgb(160, 160,160);
+    text-shadow: 5px 6px 1px rgb(160, 160,160);
+    padding: 1em;
+}
+
+ul {
+    /* Remove the default padding */
+    padding: 0;
+    text-align: center;
+    display:inline;
+     /* to hide the marker (puce) */
+     list-style: none;
+}
+
+header nav ul li {
+    /* to hide the marker (puce) */
+    /* list-style-type: none; */
+    /* Change listitem to inline because the default value is block */
+    display: inline;
+    /* Padding between ListItem */
+    padding: 1.3em;
+    font-size: 1.8em;
+}
+
+a {
+    text-decoration: none;
+    color:darkslateblue;
+}
+
+a:focus, a:hover {
+    /* When the object receives the focus or the user move the mouse into an object */
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+a:visited {
+    /* Occurs when the hyperlink was visited */
+    color:rgb(94, 0, 44)
+}
+
+.difblock {
+    margin: 0 auto;
+}
+
+#image {
+    height: 250px;
+    background-image: url("../img/dell_photo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position-x: center;
+    /* Adapts the size of image on the container */
+    background-size: contain;
+}
+
+#image h2 {
+    /* Remove the bold for h2 */
+    font-weight: normal;
+    text-align: center;
+}
